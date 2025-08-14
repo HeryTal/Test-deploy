@@ -4,15 +4,24 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
->
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+    
+    <!-- Préchargement des assets critiques -->
+    <link rel="modulepreload" href="/src/main.jsx" as="script">
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-    <script src="index-LCFQUHPy.js"></script>
+    
+    <!-- Script modifié -->
+    <script src="/src/main.jsx"></script>
+    
+    <!-- Fallback pour les navigateurs non compatibles -->
+    <noscript>
+      <strong>JavaScript est requis pour faire fonctionner cette application.</strong>
+    </noscript>
   </body>
 </html>
