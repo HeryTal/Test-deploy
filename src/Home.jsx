@@ -58,7 +58,7 @@ export default function Home() {
             </div>
 
             <div className="home-right">
-                <h1>Welcome to ChessApp</h1>
+                <h1>Welcome to my Chess App</h1>
                 <p>Play locally or start an online game with friends!</p>
                 <div className="home-buttons">
                     <button className="btn-local" onClick={handlePlayLocally}>Play Locally</button>

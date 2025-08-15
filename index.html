@@ -10,18 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
     
-    <!-- Préchargement des assets critiques -->
-    <link rel="modulepreload" href="/src/main.jsx" as="script">
+  <!-- Préchargement des assets critiques -->
   </head>
   <body>
     <div id="root"></div>
     
-    <!-- Script modifié -->
-    <script src="/src/main.jsx"></script>
+  <!-- Script modifié -->
+  <script type="module" src="/src/main.jsx"></script>
     
-    <!-- Fallback pour les navigateurs non compatibles -->
-    <noscript>
-      <strong>JavaScript est requis pour faire fonctionner cette application.</strong>
-    </noscript>
   </body>
 </html>
